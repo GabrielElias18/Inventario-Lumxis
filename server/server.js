@@ -12,13 +12,15 @@ const categoryRoutes = require('./routes/categoryRoutes');
 const productRoutes = require('./routes/productRoutes');
 const ingresoRoutes = require('./routes/ventaRoutes');
 const egresoRoutes = require('./routes/egresoRoutes');
+const clienteRoutes = require('./routes/clientRoutes')
+const proveedorRoutes = require('./routes/proveedorRoutes')
 const adminRoutes = require('./routes/admin/adminRoutes');
 
 const app = express();
 
 // Configuración de CORS
 app.use(cors({
-  origin: 'http://localhost:5173', // Cambia esto en producción
+  origin: '*', // Cambia esto en producción
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true,
 }));
@@ -35,6 +37,8 @@ app.use('/api/', categoryRoutes);
 app.use('/api/productos', productRoutes);
 app.use('/api/ventas', ingresoRoutes);
 app.use('/api/egresos', egresoRoutes);
+app.use('/api/clientes', clienteRoutes);
+app.use('/api/proveedores', proveedorRoutes);
 app.use('/admin', adminRoutes);
 
 // Iniciar servidor solo si la conexión es exitosa
