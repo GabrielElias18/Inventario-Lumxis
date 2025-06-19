@@ -341,10 +341,6 @@ Si tienes preguntas o necesitas ayuda:
 - 🐛 Issues: [GitHub Issues](https://github.com/tu-usuario/inventario-lumxis/issues)
 - 📖 Documentación: [Wiki del proyecto](https://github.com/tu-usuario/inventario-lumxis/wiki)
 
-## 📄 Licencia
-
-Este proyecto está bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
 ---
 
 <div align="center">
