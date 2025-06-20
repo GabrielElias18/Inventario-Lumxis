@@ -87,7 +87,7 @@ Inventario-Lumxis/
 
 - Node.js 18 o superior
 - PostgreSQL 13 o superior
-- npm o yarn
+- npm
 
 ### Pasos de instalación
 
